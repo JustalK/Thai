@@ -1,0 +1,67 @@
+@CHARSET "ISO-8859-1";
+
+/*==================================================================================================================
+
+==================================================================================================================*/
+
+.header-top-top {
+	background: #FFF;
+	height: 75px;
+	line-height: 75px;
+}
+
+.header-top-middle {
+	background: #030303;
+	height: 400px;
+}
+
+.header-top-bottom {
+	background: #ffffff;
+	height: 80px;
+	border-bottom: 1px solid #bdbdbd;
+}
+
+/*==================================================================================================================
+
+==================================================================================================================*/
+
+.header-top-button {
+	text-align: center;
+	font-weight: bold;
+	color: #8b8b8b;
+}
+
+/*==================================================================================================================
+Basic
+==================================================================================================================*/
+html,body
+{
+	background: #e5e9e9;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Helvetica Neue', sans-serif;
+	text-align: justify; 
+	text-justify: inter-word;
+	font-size: 14px;
+}
+
+#logo {
+	height:100%;
+	background: #030303 url("../imgs/logo.png") no-repeat scroll center top;
+}
+
+.img-responsive-custom {
+	display: block;
+	height: 100%;
+	width: auto;
+}
+
+.max-height {
+	height: 100%;
+}
+
+.test {
+	background: #FF0000;
+}
