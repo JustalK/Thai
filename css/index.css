@@ -60,6 +60,14 @@ a:hover {
 	color: #c74545;
 }
 
+p {
+	display: inline;
+}
+
+.gray {
+	color: #8b8b8b;
+}
+
 .path {
 	cursor: pointer;
 	text-decoration: underline;
@@ -77,9 +85,13 @@ a:hover {
 	background: #030303 url("../imgs/logo.png") no-repeat scroll center top;
 }
 
-#circle {
-	display:block;
-    margin:auto;
+.circle {
+	position: absolute;
+	margin-left:-15px;
+	padding-right:15px;
+	padding-left: 15px;
+	top:50%;
+	transform: translateY(-50%);
 }
 
 #alphabet {
@@ -105,9 +117,17 @@ a:hover {
 	border: 1px solid #c74545;
 	font-family: "Open Sans",Helvetica,Arial,sans-serif;
 	font-weight:600;
-	padding:12px 80px;
+	width: 100%;
+	height: 40px;
+    box-sizing: border-box;
 	text-decoration:none;
-	line-height: 12px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#login:hover {
+	background-color:#c74545;
+	color:#FFFFFF;
 }
 
 .myButton {
@@ -133,6 +153,10 @@ a:hover {
 	display: block;
 	height: 100%;
 	width: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	
 }
 
 .max-height {
