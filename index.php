@@ -30,8 +30,8 @@
 		
 		<div class="row header-top-middle">
 			<div id="logo" style="height: 100%;">
-				<div id="alphabet" class="col-md-offset-2 col-md-2 max-height">
-					 <div id="circle"></div>
+				<div class="col-md-offset-2 col-md-2 col-sm-2 max-height" style="">
+					<img src="imgs/circle.png" class="img-responsive" style="position: relative;top:50%;transform: translateY(-50%);" />
 				</div>
 				<div id="title" class="col-md-8 max-height" style="float: left;display: flex;align-items: center;">
 					<div style="max-width: 100%;">
