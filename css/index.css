@@ -18,6 +18,7 @@
 .header-top-bottom {
 	background: #ffffff;
 	height: 80px;
+	line-height: 80px;
 	border-bottom: 1px solid #bdbdbd;
 }
 
@@ -41,15 +42,93 @@ html,body
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-feature-settings: "kern";
 	text-align: justify; 
 	text-justify: inter-word;
 	font-size: 14px;
 }
 
+a {
+	font-weight:600;
+	color: #8b8b8b;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: #c74545;
+}
+
+.path {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #c74545;
+}
+
+.path:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #9b2f2f;
+}
+
 #logo {
 	height:100%;
 	background: #030303 url("../imgs/logo.png") no-repeat scroll center top;
+}
+
+#circle {
+	height:100%;
+	background: url("../imgs/circle.png") center center;
+	background-size: auto 50%; 
+    background-repeat: no-repeat;
+}
+
+#alphabet {
+	height:100%;
+	background: url("../imgs/alphabet.png") center center;
+	background-size: auto 50%; 
+    background-repeat: no-repeat;
+}
+
+#title {
+	font-size: 50px;
+	color: #FFFFFF;
+}
+
+#login {
+	background-color:#FFFFFF;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#c74545;
+	border: 1px solid #c74545;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-weight:600;
+	padding:12px 80px;
+	text-decoration:none;
+	line-height: 12px;
+}
+
+.myButton {
+	background-color:#c74545;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	font-weight:600;
+	padding:12px 80px;
+	text-decoration:none;
+}
+
+.myButton:hover {
+	background-color:#bd2a2a;
 }
 
 .img-responsive-custom {
