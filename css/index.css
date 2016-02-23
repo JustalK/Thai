@@ -4,15 +4,23 @@
 
 ==================================================================================================================*/
 
+#headerBanner {
+	min-height:400px;
+	height:0%;
+	max-height:calc(100% - 156px);
+}
+
 .header-top-top {
 	background: #FFF;
 	height: 75px;
 	line-height: 75px;
+	border-bottom: 1px solid #bdbdbd;
 }
 
 .header-top-middle {
-	background: #030303;
-	height: 400px;
+	background: #000000;
+	min-height: 400px;
+	height: 100%;
 }
 
 .header-top-bottom {
@@ -20,6 +28,7 @@
 	height: 80px;
 	line-height: 80px;
 	border-bottom: 1px solid #bdbdbd;
+	border-top: 1px solid #bdbdbd;
 }
 
 /*==================================================================================================================
@@ -49,12 +58,12 @@ html,body
 	font-size: 14px;
 }
 
-a {
+addr {
 	font-weight:600;
 	color: #8b8b8b;
 }
 
-a:hover {
+addr:hover {
 	cursor: pointer;
 	text-decoration: none;
 	color: #c74545;
@@ -64,8 +73,16 @@ p {
 	display: inline;
 }
 
+.menu {
+	border-right: 1px solid #bdbdbd;
+}
+
 .gray {
 	color: #8b8b8b;
+}
+
+.white {
+	color: #FFFFFF;
 }
 
 .path {
@@ -81,8 +98,8 @@ p {
 }
 
 #logo {
-	height:100%;
-	background: #030303 url("../imgs/logo.png") no-repeat scroll center top;
+	height:400px;
+	background: #030303 url("../imgs/logo2.png") no-repeat scroll center top;
 }
 
 .circle {
@@ -130,7 +147,7 @@ p {
 	color:#FFFFFF;
 }
 
-.myButton {
+.button-banner {
 	background-color:#c74545;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
@@ -145,7 +162,7 @@ p {
 	text-decoration:none;
 }
 
-.myButton:hover {
+.button-banner:hover {
 	background-color:#bd2a2a;
 }
 
@@ -161,6 +178,47 @@ p {
 
 .max-height {
 	height: 100%;
+}
+
+.max-width {
+	width: 100%;
+}
+
+.title-menu {	
+	font-size:14px;
+	font-weight:600;
+	background:#c74545;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+
+.title-menu-image {
+	height:250px;
+	background: #030303 url('imgs/aboutme.png') no-repeat scroll center top;
+	border-top:1px solid #000000;
+	border-bottom:1px solid #bdbdbd;
+	border-left:1px solid #bdbdbd;
+	border-right:1px solid #bdbdbd;
+}
+
+.item-bottom {
+    -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1);
+}
+
+.item-bottom:hover {
+    -ms-transform: scale(1.05,1.05); /* IE 9 */
+    -webkit-transform: scale(1.05,1.05); /* Safari */
+    transform: scale(1.05,1.05);
+    cursor:pointer;
+}
+
+.submenu {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
 }
 
 .test {
