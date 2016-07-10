@@ -329,6 +329,7 @@ $("#home").click(function() {
 				$("#menu-bottom").remove();
 				$(".header-top-middle").show();
 				$("#logo").animate({"opacity":"1"},300);
+				$("#submenu").animate({"opacity":"1"},400)
 			});
 		});
 	}

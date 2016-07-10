@@ -1,5 +1,25 @@
 @CHARSET "ISO-8859-1";
 
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../font/proxima_nova.eot'); /* IE9 Compat Modes */
+  src: url('../font/proxima_nova.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/proxima_nova.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/proxima_nova.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/proxima_nova.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/proxima_nova.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'bebas-neue';
+  src: url('../font/bebas_neue.eot'); /* IE9 Compat Modes */
+  src: url('../font/bebas_neue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/bebas_neue.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/bebas_neue.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/bebas_neue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/bebas_neue.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 /*==================================================================================================================
 
 ==================================================================================================================*/
@@ -25,7 +45,7 @@
 
 .header-top-bottom {
 	background: #ffffff;
-	height: 80px;
+	height: 81px;
 	line-height: 80px;
 	border-bottom: 1px solid #bdbdbd;
 	border-top: 1px solid #bdbdbd;
@@ -51,11 +71,13 @@ html,body
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	font-family: "proxima-nova","Open Sans",Helvetica,Arial,sans-serif;
 	font-feature-settings: "kern";
 	text-align: justify; 
 	text-justify: inter-word;
 	font-size: 14px;
+	word-spacing: 0.8px;
+	letter-spacing: -0.2px;
 }
 
 addr {
@@ -109,6 +131,8 @@ p {
 	padding-left: 15px;
 	top:50%;
 	transform: translateY(-50%);
+	max-width: 300px;
+	width: 100%;
 }
 
 #alphabet {
@@ -194,7 +218,7 @@ p {
 }
 
 .title-menu-image {
-	height:250px;
+	height:100%;
 	background: #030303 url('imgs/aboutme.png') no-repeat scroll center top;
 	border-top:1px solid #000000;
 	border-bottom:1px solid #bdbdbd;
@@ -219,6 +243,10 @@ p {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	margin-left: 15px;
+}
+
+#submenu {
+	height: calc(100% - 555px);
 }
 
 .test {

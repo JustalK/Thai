@@ -9,9 +9,10 @@ class View {
 	
 	public function __toString() {
 		$tmp ='<div id="contentAboutMe" style="background:#e5e9e9;height:100%;opacity:0;">
-					<div class="row" style="margin-bottom:20px;overflow-y: scroll;">
-						<div class="col-md-offset-2 col-md-10 col-sm-offset-2 col-sm-6 hidden-xs max-height" style="position:relative;margin-top:20px;">
-							azeazeazeaze
+					<div class="row" style="height:100%;overflow-y: scroll;">
+						<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-6 hidden-xs max-height" style="position:relative;padding-top:20px;text-align: center;">
+							<span id="name-aboutme" style="font-size:30px;font-weight:bold;text-align:center;color:#c74545;display:block;margin-bottom:20px;"></span>
+							<span id="slang-aboutme" style="font-size:14px;text-align:center;color:#000;"></span>
 						</div>
 					</div>
 				</div>
