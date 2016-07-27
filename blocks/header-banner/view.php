@@ -11,7 +11,7 @@ class View {
 	
 	public function __toString() {
 		$tmp ='<div id="header-middle" class="row header-top-middle" style="position:relative;">';
-		$tmp .='<div id="logo" style="position:relative;">
+		$tmp .='<div id="logo">
 					<div class="col-md-offset-2 col-md-2 col-sm-offset-1 col-sm-4 hidden-xs max-height" style="position:relative;">
 						<img src="'.$this->model->img.'" class="img-responsive circle"/>
 						<img src="imgs/circle.png" class="img-responsive circle" />

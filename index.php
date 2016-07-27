@@ -7,6 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.custom.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	<link rel="stylesheet" type="text/css" href="blocks/aboutme/aboutme.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" media="screen" rel="stylesheet" type="text/css" />
 	<!-- Framework -->
 	<script src="js/jquery.min.js"></script>
@@ -29,6 +32,6 @@
 		<div id="headerPaths"></div>
 		<div id="submenu"></div>
 		<div id="document" style="position:relative;"></div>
-<script src="js/test.js"></script>
+		<script src="js/test.js"></script>
 </body>
 </html>

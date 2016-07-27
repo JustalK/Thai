@@ -120,8 +120,16 @@ p {
 }
 
 #logo {
+	position:relative;
 	height:400px;
-	background: #030303 url("../imgs/logo2.png") no-repeat scroll center top;
+	background: #030303 url("../imgs/logo2.png") no-repeat scroll center top  / cover;
+}
+
+#mini-logo-home:hover {
+    -ms-transform: translateX(-50%) scale(1.05,1.05); /* IE 9 */
+    -webkit-transform: translateX(-50%) scale(1.05,1.05); /* Safari */
+    transform: translateX(-50%) scale(1.05,1.05);
+    cursor:pointer;	
 }
 
 .circle {
@@ -219,24 +227,33 @@ p {
 
 .title-menu-image {
 	height:100%;
-	background: #030303 url('imgs/aboutme.png') no-repeat scroll center top;
-	border-top:1px solid #000000;
+	background: #030303 url('imgs/aboutme.png') no-repeat scroll center top ;
 	border-bottom:1px solid #bdbdbd;
 	border-left:1px solid #bdbdbd;
-	border-right:1px solid #bdbdbd;
+	border-right:1px solid #bdbdbd;	
 }
 
-.item-bottom {
-    -ms-transform: scale(1,1); /* IE 9 */
-    -webkit-transform: scale(1,1); /* Safari */
-    transform: scale(1,1);
+.item-bottom:hover .title-menu-image {
+	border-bottom:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	filter:brightness(105%);
+}
+
+.item-bottom:hover .title-menu {
+	border-top:1px solid #000;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	background: #bd2a2a;
+	font-size: 16px;
+	color: #000;
 }
 
 .item-bottom:hover {
-    -ms-transform: scale(1.05,1.05); /* IE 9 */
-    -webkit-transform: scale(1.05,1.05); /* Safari */
-    transform: scale(1.05,1.05);
     cursor:pointer;
+    -ms-transform: translate(0px,-10px);
+	-webkit-transform: translate(0px,-10px);
+	transform: translate(0px,-10px);
 }
 
 .submenu {

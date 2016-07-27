@@ -2,17 +2,43 @@
 
 class View {
 	private $model;
+	private $listIcons;
 	
-	public function __construct($model) {
+	public function __construct($model,$listIcons) {
 		$this->model = $model;
+		$this->listIcons = $listIcons;
+	}
+	
+	public function view_icon() {
+		$code = "";
+		for($i=0;$i<$this->listIcons->getNumberIcons();$i++) {
+			if($i%8==0) {
+				$code .= '<div class="col-md-offset-2 col-md-1 ';				
+			} else {
+				$code .= '<div class="col-md-offset-0 col-md-1 ';
+			}
+			if($i%6==0) {
+				$code .= 'col-sm-offset-3 col-sm-offset-3-custom col-sm-1 col-sm-1-custom ';
+			} else {
+				$code .= 'col-sm-offset-0 col-sm-1 col-sm-1-custom ';
+			}
+			$code .= 'hidden-xs" style="position:relative;padding: 0px;text-align: center;">
+					<img src="'.$this->listIcons->getImg($i).'" class="img-responsive" alt="Cinque Terre"> 
+					<div class="rank-aboutme"><div class="rank-aboutme-level" data-level="'.$this->listIcons->getLevel($i).'"></div></div>
+				</div>';
+		}
+		return $code;
 	}
 	
 	public function __toString() {
 		$tmp ='<div id="contentAboutMe" style="background:#e5e9e9;height:100%;opacity:0;">
-					<div class="row" style="height:100%;overflow-y: scroll;">
-						<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-6 hidden-xs max-height" style="position:relative;padding-top:20px;text-align: center;">
-							<span id="name-aboutme" style="font-size:30px;font-weight:bold;text-align:center;color:#c74545;display:block;margin-bottom:20px;"></span>
-							<span id="slang-aboutme" style="font-size:14px;text-align:center;color:#000;"></span>
+					<div class="rank-icons">
+						<div class="row row-aboutme rank-icons-inside">
+							<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 hidden-xs max-height" style="position:relative;text-align: center;margin-bottom:50px;">
+								<span id="name-aboutme" style="font-size:30px;font-weight:bold;text-align:center;color:#c74545;display:block;">&nbsp</span>
+								<span id="slang-aboutme" style="font-size:14px;text-align:center;color:#000;">&nbsp</span>
+							</div>
+							'.$this->view_icon().'
 						</div>
 					</div>
 				</div>

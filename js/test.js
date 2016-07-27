@@ -14,7 +14,25 @@ function initialization() {
  	 		$(document).ready(function() {
 	 				$.getScript("blocks/header-menu/controller.js");
 	 				$.getScript("blocks/header-banner/controller.js");
+	 				$.getScript("blocks/header-paths/controller.js");
 	 				$.getScript("blocks/submenu/controller.js");
+	 				
+	 				$("#mini-logo-home").click(function() {
+	 					$("#headerBanner").animate({"opacity":"0"},600);
+	 					$("#headerPaths").animate({"opacity":"0"},600);
+	 					$("#submenu").animate({"opacity":"0"},600,function() {
+	 							$("body > div > div").not( "#header-menu" ).remove();
+	 							$("#headerBanner").attr("style", "opacity:0;");
+	 							$("#headerPaths").attr("style", "opacity:0;");
+	 							$("#submenu").attr("style", "opacity:0;");
+								$("#headerBanner").append(res2[0]);
+					 	 		$("#headerPaths").append(res3[0]);	
+					 	 		$("#submenu").append(res4[0]);
+					 	 		$("#headerBanner").animate({"opacity":"1"},600);
+			 					$("#headerPaths").animate({"opacity":"1"},600);
+			 					$("#submenu").animate({"opacity":"1"},600);
+	 					});
+	 				});
  	 		});
 	});
 }

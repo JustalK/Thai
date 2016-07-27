@@ -1,6 +1,6 @@
 var inLoadingPortefolio = false;
 var uniqueLoadingPortefolio = false;
-$(".button-banner").bind("click",function() {
+$('body').on('click','.button-banner',function() {
 	if(!inLoadingPortefolio){
 		positionViewer = "portefolio";
 		inLoadingPortefolio=true;

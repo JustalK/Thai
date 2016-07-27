@@ -1,12 +1,9 @@
-$("#aboutme").click(function() {
-	positionViewer = "aboutme";
-	
+$('body').on('click','#skills',function() {
+	positionViewer = "skills";	
 	$("#submenu").animate({"opacity":"0"},400,function() {
 		$("#submenu").hide();
-		//$("#parallax").animate({"top":-$("#parallax").height()+"px"},400);
-		//$("#document").animate({"top":-$("#parallax").height()+"px"},400);
 		$("#paths").empty();
-		$("#paths").append("About Me");
+		$("#paths").append("Skills");
 		$("#logo").animate({"opacity":"0"},1000,function() {
 			$("#logo").hide();
 			$("#headerBanner").animate({"height":window.innerHeight+"px"},1000,function() {	
@@ -18,10 +15,5 @@ $("#aboutme").click(function() {
 				});
 			});
 		});
-		/**
-		$.get("blocks/aboutme/aboutme.php", function( data ) {
-			$("#document").append(data);
-		});
-		**/
 	});
 });

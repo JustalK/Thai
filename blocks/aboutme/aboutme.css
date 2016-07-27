@@ -3,3 +3,69 @@
 #name-aboutme {
 	font-family: "bebas-neue";
 }
+
+.row-aboutme {
+	overflow-y: scroll;
+}
+
+.row-image-aboutme {
+	height:200px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	margin-bottom: 20px;
+}
+
+.image-presentation-aboutme {
+	border: 1px solid #bdbdbd;
+	height:100%;
+}
+
+.rank-aboutme {
+	position: absolute;
+	font-weight: 900;
+	font-size: 3.5vw;
+	color: #c74545;
+	bottom: 1px;
+	left: 0px;
+border: 1px solid #bdbdbd;
+height: 20%;
+width: 90%;
+margin-left: 5%;
+}
+
+.rank-aboutme-level {
+	height:100%;
+	background-color:#c74545;
+	border: 1px solid #FFF;
+	width:0;
+}
+
+.line-gray {
+	height: calc(100% - 300px);
+	border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.rank-icons {
+	position: absolute;
+	height: 100%;
+	bottom: 0px;
+}
+
+.rank-icons-inside {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);	
+}
+
+@media (max-width:768px) {
+	.row-aboutme .col-sm-1 {
+		width: 10%;	
+	}
+	
+	.row-aboutme .col-sm-offset-3{
+		margin-left: 20%;	
+	}
+}

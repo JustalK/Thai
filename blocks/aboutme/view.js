@@ -1,10 +1,5 @@
-$('<link>')
-  .appendTo('head')
-  .attr({type : 'text/css', rel : 'stylesheet'})
-  .attr('href', './blocks/aboutme/aboutme.css');
-
-var name = "Justal Latsuj Kevin";
-var slang = "Let me share with you some parts of my past";
+var name = "Justal Latsuj Kevin ";
+var slang = "Below, you can find my level in the differents technologies ";
 
 var i = 0;
 setTimeout("completeName()", 100);
@@ -25,20 +20,6 @@ function completeSlang() {
 	}
 }
 
-$("#home").click(function() {
-	if(positionViewer=="aboutme") {
-		positionViewer = "menu";
-		$("#contentAboutMe").animate({"opacity":"0"},500,function() {
-			animation = false;
-			$("#contentAboutMe").remove();
-			$("#headerBanner").animate({"height":"0px"},1000,function() {
-				$("#paths").empty();
-				$("#paths").append("Menu");
-				$("#submenu").show();
-				$("#submenu").animate({"opacity":"1"},400);
-				$("#logo").show();
-				$("#logo").animate({"opacity":"1"},300);
-			});
-		});
-	}
+$( ".rank-aboutme-level" ).each(function() {
+	  $(this).animate({"width":$(this).data("level")+"%"},1000);
 });

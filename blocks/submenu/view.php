@@ -20,7 +20,7 @@ class View {
 				$tmp .='<div id="'.strtolower(str_replace(' ', '', $this->model->listSubmenu[$i]->title)).'" class="item-bottom col-md-offset-0 col-md-2 col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-10" style="margin-top:20px;height: calc(100% - 40px);">';			
 			}
 			$tmp .='<div class="title-menu max-width white">'.$this->model->listSubmenu[$i]->title.'</div>';
-			$tmp .='<div class="title-menu-image" style="background: #030303 url(\''.$this->model->listSubmenu[$i]->link.'\') no-repeat scroll center top;height: calc(100% - 50px);"></div>';
+			$tmp .='<div class="title-menu-image" style="background: #030303 url(\''.$this->model->listSubmenu[$i]->link.'\') no-repeat scroll center top / cover;height: calc(100% - 50px);"></div>';
 			$tmp .='</div>';
 		}
 		$tmp .= '</div>';
