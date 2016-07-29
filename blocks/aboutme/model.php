@@ -20,11 +20,13 @@ class Icon {
 	private $img;
 	private $level;
 	private $href;
+	private $slang;
 
-	public function __construct($img,$level,$href="") {
+	public function __construct($img,$level,$slang,$href="") {
 		$this->img = $img;
 		$this->level = $level;
 		$this->href = $href;
+		$this->slang = $slang;
 	}
 
 	public function __get($property) {
@@ -49,6 +51,11 @@ class ListIcons {
 	public function getLevel($pos) {
 		$arr = $this->table;
 		return $arr[$pos]->level;
+	}	
+
+	public function getSlang($pos) {
+		$arr = $this->table;
+		return $arr[$pos]->slang;
 	}	
 	
 	public function getNumberIcons() {

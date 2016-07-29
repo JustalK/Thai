@@ -23,7 +23,7 @@ class View {
 				$code .= 'col-sm-offset-0 col-sm-1 col-sm-1-custom ';
 			}
 			$code .= 'hidden-xs" style="position:relative;padding: 0px;text-align: center;">
-					<img src="'.$this->listIcons->getImg($i).'" class="img-responsive" alt="Cinque Terre"> 
+					<img src="'.$this->listIcons->getImg($i).'" class="img-responsive img-logo" data-slang="'.$this->listIcons->getSlang($i).'" alt="Cinque Terre"> 
 					<div class="rank-aboutme"><div class="rank-aboutme-level" data-level="'.$this->listIcons->getLevel($i).'"></div></div>
 				</div>';
 		}
@@ -34,11 +34,14 @@ class View {
 		$tmp ='<div id="contentAboutMe" style="background:#e5e9e9;height:100%;opacity:0;">
 					<div class="rank-icons">
 						<div class="row row-aboutme rank-icons-inside">
-							<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 hidden-xs max-height" style="position:relative;text-align: center;margin-bottom:50px;">
+							<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 hidden-xs max-height" style="position:relative;text-align: center;margin-bottom:30px;">
 								<span id="name-aboutme" style="font-size:30px;font-weight:bold;text-align:center;color:#c74545;display:block;">&nbsp</span>
 								<span id="slang-aboutme" style="font-size:14px;text-align:center;color:#000;">&nbsp</span>
 							</div>
 							'.$this->view_icon().'
+							<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 hidden-xs max-height" style="position:relative;text-align: center;margin-bottom:50px;">
+								<span id="description-logo" style="font-size:25px;font-weight:bold;text-align:center;color:#c74545;display:block;margin-top:30px;">&nbsp</span>
+							</div>
 						</div>
 					</div>
 				</div>
