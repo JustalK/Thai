@@ -1,5 +1,30 @@
 var positionViewer = "menu";
 
+/**
+ * ========================================================================>
+ * For loading all the image that I need for my website
+ * ========================================================================>
+ */
+var pre_load_image_home = ['../imgs/logo_articles.png',
+                           '../imgs/logo_github.png',
+                           '../imgs/logo_skills.png',
+                           '../imgs/project.png',
+                           '../imgs/articles.png',
+                           '../imgs/github.png',
+                           '../imgs/aboutme.png',
+                           '../imgs/unnamed.png',
+                           '../imgs/kj.png',
+                           '../imgs/circle.png'];
+for(var i=0;i<pre_load_image_home.length;i++) {
+	var img = new Image();
+	img.src = pre_load_image_home[i];
+}
+/**
+ * ========================================================================>
+ * For loading all the content and mecha of my website
+ * ========================================================================>
+ */
+
 initialization();
 function initialization() {
 	$.when($.get({url:"blocks/header-menu/headerMenu.php",datatype:"text"}),

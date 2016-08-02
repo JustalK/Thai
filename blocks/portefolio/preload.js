@@ -111,15 +111,18 @@ function cadre(link,posX,posY,posZ,photo,liMaxX,liMaxY,liMaxZ,limX,limY,limZ,spe
 
 var project2015_1 = new cadre("http://www.google.com",50,30,950,'images/2015_1.png',60,35,1337,-1337,-1337,50,1.78,1.4,-10.08,0.45,-1337,0.0148);
 var project2015_2 = new cadre("http://www.google.com",-20,-14,1100,'images/2015_2.png',0,0,0,0,0,0,0,0,0,0,0,0);
-var project2016_1 = new cadre("http://www.google.com",-100,-40,850,'images/2016_1.png',1337,1337,1337,-85,-40,-35,-2,-0.7,-10.32,1337,-0.35,-0.008);
+var project2016_1 = new cadre("http://www.google.com",-100,-40,850,'images/2016_1.png',1337,1337,1337,-85,-40,-35,-2,-0.7,-10.32,1337,-0.85,-0.008);
+var project2016_3 = new cadre("http://www.google.com",-80,75,800,'images/2016_3.png',100,90,1337,-70,-1337,-50,-1.85,3,-10,0.3,-0.3,0.007);
 project2016_1.mesh.scale.set(0.6,0.6,0.6);
 project2016_1.mesh.rotation.z=-0.2;
+project2016_3.mesh.rotation.z=0.3;
 project2015_1.mesh.scale.set(0.6,0.6,0.6);
 project2015_1.mesh.rotation.z=0.5;
 var projects = [];
 projects.push(project2015_2);
 projects.push(project2015_1);
 projects.push(project2016_1);
+projects.push(project2016_3);
 
 var materialWallpaper = new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture( 'images/start.png' ), transparent: true, opacity: 0  } );
 var wallpaper = new THREE.Mesh( new THREE.PlaneGeometry( 4*window.innerWidth, 4*window.innerHeight, 4, 4 ), materialWallpaper );

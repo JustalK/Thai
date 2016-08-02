@@ -17,3 +17,7 @@ $('body').on('click','#skills',function() {
 		});
 	});
 });
+
+$('body').on('mouseenter','#menu-bottom > div',function() {
+	changeBanner($(this).attr("id"));
+});

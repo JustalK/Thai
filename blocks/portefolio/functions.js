@@ -160,7 +160,7 @@ function animate() {
 			if(intersects_upload.length > 0) {
 				for(var i=0;i<intersects_upload.length;i++) {
 					for(var j=0;j<projects.length;j++) {
-						if(intersects_upload[i].object==projects[j].photo || intersects_upload[i].object==projects[j].cadre) {
+						if(intersects_upload[i].object==projects[j].photo || intersects_upload[i].object==projects[j].title || intersects_upload[i].object==projects[j].date || intersects_upload[i].object==projects[j].back || intersects_upload[i].object==projects[j].info || intersects_upload[i].object==projects[j].cadre) {
 							projectsIntersection = j; 
 						}
 						if(intersects_upload[i].object==projects[j].back && inZoom) {
@@ -232,6 +232,7 @@ function firstMovement() {
 	moveProject(project2015_1);
 	moveProject(project2015_2);
 	moveProject(project2016_1);
+	moveProject(project2016_3);
 	for(var i=1;i<projects.length;i++) {
 		moveTo(projects[i]);
 	}

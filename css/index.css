@@ -20,6 +20,14 @@
        url('../font/bebas_neue.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+.h2, h2 {
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 /*==================================================================================================================
 
 ==================================================================================================================*/
@@ -71,13 +79,13 @@ html,body
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	font-family: "proxima-nova","Open Sans",Helvetica,Arial,sans-serif;
+	font-family: "bebas-neue","Open Sans",Helvetica,Arial,sans-serif;
 	font-feature-settings: "kern";
 	text-align: justify; 
 	text-justify: inter-word;
 	font-size: 14px;
 	word-spacing: 0.8px;
-	letter-spacing: -0.2px;
+	letter-spacing: 1px;
 }
 
 addr {
@@ -122,7 +130,9 @@ p {
 #logo {
 	position:relative;
 	height:400px;
-	background: #030303 url("../imgs/logo2.png") no-repeat scroll center top  / cover;
+	background: #030303 url("../imgs/logo_skills.png") no-repeat scroll center top  / cover;
+	background: #030303 url("../imgs/logo_articles.png") no-repeat scroll center top  / cover;
+	background: #030303 url("../imgs/logo_github.png") no-repeat scroll center top  / cover;
 }
 
 #mini-logo-home:hover {
@@ -183,11 +193,9 @@ p {
 	background-color:#c74545;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
-	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: "Open Sans",Helvetica,Arial,sans-serif;
 	font-size:14px;
 	font-weight:600;
 	padding:12px 80px;
@@ -196,6 +204,7 @@ p {
 
 .button-banner:hover {
 	background-color:#bd2a2a;
+	color: #000;
 }
 
 .img-responsive-custom {
@@ -231,6 +240,7 @@ p {
 	border-bottom:1px solid #bdbdbd;
 	border-left:1px solid #bdbdbd;
 	border-right:1px solid #bdbdbd;	
+	height: calc(100% - 50px);
 }
 
 .item-bottom:hover .title-menu-image {
@@ -238,6 +248,7 @@ p {
 	border-left:1px solid #000;
 	border-right:1px solid #000;
 	filter:brightness(105%);
+	height: calc(100% - 30px);
 }
 
 .item-bottom:hover .title-menu {

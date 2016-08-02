@@ -1,9 +1,12 @@
-<?php include_once 'libs/constants.php'; ?>
+<?php 
+include_once 'libs/constants.php';
+include_once 'libs/seo.php'; 
+?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="<?=ENCODAGE?>">
 	<title><?=TITLE?></title>
+	<meta charset="<?=ENCODAGE?>" content="<?=CONTENT_META?>" >
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.custom.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
