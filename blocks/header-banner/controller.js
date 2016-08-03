@@ -45,24 +45,25 @@ $('body').on('click','.button-banner',function() {
 
 function changeBanner($id) {
 	if($id=="skills") {
+		$("#logo").css("opacity",0);
 		$("#logo").css('background','#030303 url("../imgs/logo_skills.png") no-repeat scroll center top  / cover');
 		$("#title h1").css("color","#FFFFFF");
 		$("#title h1").html("Push yourself always further !");
-	}
+		$("#logo").animate({"opacity":"1"},300);
+	} else
 	if($id=="github") {
+		$("#logo").css("opacity",0);
 		$("#logo").css('background','#030303 url("../imgs/logo_github.png") no-repeat scroll center top  / cover');
 		$("#title h1").css("color","#000000");
 		$("#title h1").html("Want to see my code ?");
-	}
+		$("#logo").animate({"opacity":"1"},300);
+	} else
 	if($id=="articles") {
+		$("#logo").css("opacity",0);
 		$("#logo").css('background','#030303 url("../imgs/logo_articles.png") no-repeat scroll center top  / cover');
 		$("#title h1").css("color","#000000");
 		$("#title h1").html("Some articles about coding");
-	}
-	if($id=="articles") {
-		$("#logo").css('background','#030303 url("../imgs/logo_articles.png") no-repeat scroll center top  / cover');
-		$("#title h1").css("color","#000000");
-		$("#title h1").html("Some articles about coding");
+		$("#logo").animate({"opacity":"1"},300);
 	}
 }
 

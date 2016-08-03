@@ -18,6 +18,15 @@ $('body').on('click','#skills',function() {
 	});
 });
 
+var actionBanner = false;
+
 $('body').on('mouseenter','#menu-bottom > div',function() {
+	actionBanner = true;
 	changeBanner($(this).attr("id"));
 });
+
+
+
+
+
+

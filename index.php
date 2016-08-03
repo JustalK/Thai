@@ -7,6 +7,7 @@ include_once 'libs/seo.php';
 <head>
 	<title><?=TITLE?></title>
 	<meta charset="<?=ENCODAGE?>" content="<?=CONTENT_META?>" >
+	<meta name="keywords" content="<?=KEYWORDS_META?>" >
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.custom.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
