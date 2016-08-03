@@ -20,7 +20,13 @@ class View {
 			 		<div id="title" class="col-md-8 col-md-offset-0 col-sm-offset-0 col-xs-offset-1 max-height" style="float: left;display: flex;align-items: center;">
 						<div style="max-width: 100%;">
 							<h1>'.$this->model->title.'</h1>
-				 			<div class="button-banner">Portefolio</div>
+							<a class="button-portefolio">
+								<span class="bg-tall">
+									<span class="line-bottom-left"></span>
+									<span class="line-top-right"></span>
+								</span>	
+								<span class="text">portefolio</span>
+							</a>
 						</div>
 					</div>
 				</div>';

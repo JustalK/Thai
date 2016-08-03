@@ -18,11 +18,12 @@ $('body').on('click','#skills',function() {
 	});
 });
 
-var actionBanner = false;
-
+var lastEnter = false;
 $('body').on('mouseenter','#menu-bottom > div',function() {
-	actionBanner = true;
-	changeBanner($(this).attr("id"));
+	if($(this).attr("id")!=lastEnter) {
+		changeBanner($(this).attr("id"));
+		lastEnter = $(this).attr("id");
+	}
 });
 
 
