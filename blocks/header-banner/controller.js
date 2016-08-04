@@ -1,6 +1,6 @@
 var inLoadingPortefolio = false;
 var uniqueLoadingPortefolio = false;
-$('body').on('click','.button-banner',function() {
+$('body').on('click','.button-portefolio',function() {
 	if(!inLoadingPortefolio){
 		positionViewer = "portefolio";
 		inLoadingPortefolio=true;
@@ -43,33 +43,43 @@ $('body').on('click','.button-banner',function() {
 	}
 });
 
-function changeBanner($id) {
-	if($id=="skills") {
+$("body").on('mouseenter',".button-portefolio",function() {
+	changeBanner("portefolio");
+});
+
+var lastEnter = "portefolio";
+function changeBanner(id) {
+	if(id!=lastEnter) {
 		$("#logo").clearQueue();
 		$("#logo").stop();
 		$("#logo").css("opacity",0);
-		$("#logo").css('background','#030303 url("../imgs/logo_skills.png") no-repeat scroll center top  / cover');
-		$("#title h1").css("color","#FFFFFF");
-		$("#title h1").html("Push yourself always further !");
+		if(id=="skills") {
+			$("#logo").css('background','#030303 url("../imgs/logo_skills.png") no-repeat scroll center top  / cover');
+			$("#title h1").css("color","#FFFFFF");
+			$("#title h1").html("Push yourself always further !");
+		} else
+		if(id=="github") {
+			$("#logo").css('background','#030303 url("../imgs/logo_github.png") no-repeat scroll center top  / cover');
+			$("#title h1").css("color","#000000");
+			$("#title h1").html("Want to see my code ?");
+		} else
+		if(id=="articles") {
+			$("#logo").css('background','#030303 url("../imgs/logo_articles.png") no-repeat scroll center top  / cover');
+			$("#title h1").css("color","#000000");
+			$("#title h1").html("Some articles about coding");
+		} else
+		if(id=="project") {
+			$("#logo").css('background','#030303 url("../imgs/logo_project.png") no-repeat scroll center top  / cover');
+			$("#title h1").css("color","#FFFFFF");
+			$("#title h1").html("Sleep, eat, code !");
+		} else
+		if(id=="portefolio") {
+			$("#logo").css('background','#030303 url("../imgs/logo_portefolio.png") no-repeat scroll center top  / cover');
+			$("#title h1").css("color","#FFFFFF");
+			$("#title h1").html("Welcome to my land !");
+		}
 		$("#logo").animate({"opacity":"1"},500);
-	} else
-	if($id=="github") {
-		$("#logo").clearQueue();
-		$("#logo").stop();
-		$("#logo").css("opacity",0);
-		$("#logo").css('background','#030303 url("../imgs/logo_github.png") no-repeat scroll center top  / cover');
-		$("#title h1").css("color","#000000");
-		$("#title h1").html("Want to see my code ?");
-		$("#logo").animate({"opacity":"1"},500);
-	} else
-	if($id=="articles") {
-		$("#logo").clearQueue();
-		$("#logo").stop();
-		$("#logo").css("opacity",0);
-		$("#logo").css('background','#030303 url("../imgs/logo_articles.png") no-repeat scroll center top  / cover');
-		$("#title h1").css("color","#000000");
-		$("#title h1").html("Some articles about coding");
-		$("#logo").animate({"opacity":"1"},500);
+		lastEnter = id;
 	}
 }
 

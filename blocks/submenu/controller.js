@@ -18,12 +18,8 @@ $('body').on('click','#skills',function() {
 	});
 });
 
-var lastEnter = false;
 $('body').on('mouseenter','#menu-bottom > div',function() {
-	if($(this).attr("id")!=lastEnter) {
 		changeBanner($(this).attr("id"));
-		lastEnter = $(this).attr("id");
-	}
 });
 
 
